@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/redi',function(){
+    return redirect()->route('url.name');
+});
+
+Route::get('/name-url', function(){
+    return 'Dr. code';
+})->name('url.name');
 /*
 Route::get('/', function () {
     return view('welcome');
